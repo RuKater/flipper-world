@@ -1,20 +1,29 @@
-export const rogueMaster = {
+import type { Article } from "@/types/article";
+
+export const rogueMaster: Article = {
   id: "rogue-master",
 
   title: "Rogue Master",
 
-  description:
-    "Одна из самых функциональных прошивок для Flipper Zero.",
+  shortDescription:
+    "Одна из самых функциональных альтернативных прошивок для Flipper Zero.",
 
-  level: "Новичок",
+  fullDescription:
+    "Rogue Master значительно расширяет возможности Flipper Zero, добавляя новые функции, дополнительные настройки и поддержку большого количества инструментов.",
 
-  duration: "25 минут",
+  category: "Прошивки",
+
+  difficulty: "Новичок",
+
+  readingTime: 25,
 
   tags: [
     "Firmware",
     "Sub-GHz",
     "NFC",
     "BadUSB",
-    "GPIO",
+    "GPIO"
   ],
+
+  lastUpdated: "2026-07-23"
 };

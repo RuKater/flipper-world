@@ -1,4 +1,5 @@
-import { rogueMaster } from "@/data/firmware/rogue-master";
+import { articles } from "@/data/articles";
+const featuredArticle = articles[0];
 export default function Hero() {
   return (
     <section className="mx-auto flex min-h-screen max-w-5xl flex-col items-center justify-center px-6 text-center">
@@ -30,20 +31,24 @@ export default function Hero() {
   </h2>
 
   <h3 className="text-xl font-semibold">
-    {rogueMaster.title}
+    {featuredArticle.title}
   </h3>
 
-  <p className="mt-2 text-gray-600">
-    {rogueMaster.description}
-  </p>
+<p className="mt-2 text-gray-600">
+  {featuredArticle.title}
+</p>
 
-  <p className="mt-4">
-    <strong>Уровень:</strong> {rogueMaster.level}
-  </p>
+<p className="mt-4">
+  <strong>Категория:</strong> {featuredArticle.category}
+</p>
 
-  <p>
-    <strong>Время изучения:</strong> {rogueMaster.duration}
-  </p>
+<p>
+  <strong>Уровень:</strong> {featuredArticle.difficulty}
+</p>
+
+<p>
+  <strong>Время чтения:</strong> {featuredArticle.readingTime} минут
+</p>
 </div>
       </div>
     </section>
